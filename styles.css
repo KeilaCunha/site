@@ -1,8 +1,8 @@
 /* Estilo geral */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 1;
+    padding: 2;
     background-color: aliceblue; /* Cor de fundo suave */
     color: #333;
     line-height: 1.6;
@@ -32,7 +32,7 @@ header p {
 
 /* Navegação */
 nav {
-    background-color: #009439;
+    background-color: #e2522e;
     padding: 10px;
     text-align: center;
 }
@@ -50,57 +50,73 @@ nav a:hover {
 
 /* Seções de conteúdo */
 .content {
-    padding: 40px;
-    margin: 20px;
+    padding: 20px; /* Aumentei o padding para separar mais o conteúdo */
+    margin: 20px 0; /* Adicionei margem em cima e embaixo para separar as seções */
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(93, 255, 120);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgb(187, 63, 14);
 }
 
-.content h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.content p {
-    font-size: 1.2em;
-}
-
-/* Seção de produtos */
+/* Ajustes na seção de produtos */
 .product-list {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-between; /* Reduz o espaço entre os produtos */
+    gap: 10px; /* Define um pequeno espaço entre os produtos */
+    flex-wrap: wrap; /* Permite que os produtos quebrem de linha se necessário */
 }
 
+/* Ajustes na classe de cada produto */
 .product {
     background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 15px; /* Mantém o padding para garantir espaçamento interno adequado */
+    border-radius: 15px;
     text-align: center;
-    width: 250px;
+    width: 200px; /* Largura do produto */
+    height: 500px; /* Aumentei a altura para que o conteúdo dentro do produto tenha espaço suficiente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Ajustes nas imagens dos produtos */
 .product img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 .product h3 {
-    margin-top: 15px;
-    font-size: 1.5em;
+    margin-top: 10px;
+    font-size: 1em;
 }
 
 .product p {
     margin-top: 10px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .product strong {
     font-size: 1.3em;
     color: #333;
+}
+
+/* Seção de Contato */
+#contact {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgb(187, 63, 14);
+}
+
+/* Estilos adicionais para os links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Rodapé */
@@ -110,3 +126,4 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
